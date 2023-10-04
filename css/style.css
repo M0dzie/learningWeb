@@ -36,4 +36,10 @@ em {
 .cta {
     color: white;
     background: linear-gradient(#8E86B5, #ACAEED);
+    border-radius: 50px;
+}
+
+.about-content {
+    border-right: 1px #8e86b5 solid;
+    border-bottom: 1px #8e86b5 solid;
 }
