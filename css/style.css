@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 em {
     color: #A5B4FC;
     font-style: normal;
@@ -33,10 +37,19 @@ em {
     background-color: white;
 }
 
+.link-icon:hover {
+    opacity: 0.5;
+}
+
 .cta {
-    color: white;
     background: linear-gradient(#8E86B5, #ACAEED);
+    color: white;
     border-radius: 50px;
+}
+
+.cta:hover {
+    background: linear-gradient(#696484, #8788BA);
+    text-decoration: none;
 }
 
 .about-content {
