@@ -4,6 +4,10 @@ body {
     font-size: 1em;
 }
 
+header, footer {
+    background-color: white;
+}
+
 h1 {
     color: #A5B4FC;
     font-family: 'Montserrat', sans-serif;
@@ -33,16 +37,12 @@ em {
     font-style: normal;
 }
 
-.header, .footer {
-    background-color: white;
-}
-
 .link-icon:hover {
     opacity: 0.5;
 }
 
 .cta {
-    background: linear-gradient(#8E86B5, #ACAEED);
+    background: linear-gradient(to right, #8E86B5, #ACAEED);
     color: white;
     border-radius: 50px;
 }
