@@ -67,6 +67,7 @@ a:hover {
     border-right: 1px #8e86b5 solid;
     border-bottom: 1px #8e86b5 solid;
     padding: 50px;
+    margin-bottom: 80px;
 }
 
 .about-content h2 {
@@ -75,6 +76,10 @@ a:hover {
 
 .about-content ul {
     margin-top: 30px;
+}
+
+.about-content + div {
+    text-align: center;
 }
 
 section {
@@ -119,9 +124,21 @@ nav a {
 .index-intro {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    align-items: center;
+    width: 60%;
+    align-items: flex-start;
     margin: auto;
+}
+
+.index-intro h1 {
+    margin-bottom: 15px;
+}
+
+.index-intro p {
+    margin-bottom: 30px;
+}
+
+.index-intro div {
+    padding-right: 80px;
 }
 
 .portfolio-photos {
