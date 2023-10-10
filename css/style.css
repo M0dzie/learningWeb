@@ -122,3 +122,32 @@ nav a {
     align-items: center;
     margin: auto;
 }
+
+.portfolio-photos {
+    background-color: white;
+}
+
+.portfolio-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+}
+
+.grid-landscapes {
+    display: grid;
+    grid-template-columns: 1fr, 1fr 1fr;
+    grid-template-rows: 300px, 300px, 300px;
+    gap: 15px;
+}
+
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 300px, 300px;
+    gap: 15px;
+}
+
+.grid-landscapes img, .grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
