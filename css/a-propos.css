@@ -21,3 +21,13 @@
     width: 50%;
     margin: auto;
 }
+
+table {
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td {
+    border: 1px #8e86b5 solid;
+    padding: 15px;
+}
