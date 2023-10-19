@@ -46,11 +46,22 @@
                     <img src="imgs/accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande">
                 </div>
             </section>
-            <section class="section-contact">
+            <section id="contact" class="section-contact">
                 <h2>Parlons de votre projet</h2>
-                <form method="get" action="">
-                    <p>Nom</p>
-                    <input type="text" label="name" placeholder="Votre nom...">
+                <form method="get" action="#">
+                    <div class="form-name-email">
+                        <div class="form-column">
+                            <label for="name">nom</label>
+                            <input type="text" name="name" id="name" placeholder="Votre nom...">
+                        </div>
+                        <div class="form-column">
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" placeholder="Votre email...">
+                        </div>
+                    </div>
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" rows="10" placeholder="Votre message..."></textarea>
+                    <input type="submit" value="ENVOYER" class="cta">
                 </form>
             </section>
         </main>
