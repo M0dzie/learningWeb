@@ -6,6 +6,8 @@ let choice = prompt("Did you want the word list or the phrase list ? : ");
 while (choice != "word" && choice != "phrase")
 	choice = prompt("Please enter a correct answer (word or phrase) : ");
 
+let nbQuestions = 0;
+
 if (choice == "word")
 {
 	for (let index = 0; index < wordList.length; index++)
@@ -19,6 +21,7 @@ if (choice == "word")
 		else
 			console.log("You failed ! It's not " + word);
 	}
+	nbQuestions = wordList.length;
 }
 else
 {
@@ -31,8 +34,15 @@ else
 			score++;
 		}
 		else
-			console.log("You failed ! it's not " + phrase);
+		console.log("You failed ! it's not " + phrase);
 	}
+	nbQuestions = phraseList.length;
 }
 
-console.log("Your final score : " + score);
+function returnMessageScore(score, nbQuestions)
+{
+	let message = "Your final score is : " + score + " on " + nbQuestions;
+	return message;
+}
+
+console.log(returnMessageScore(score, nbQuestions));
