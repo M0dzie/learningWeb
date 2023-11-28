@@ -1,36 +1,26 @@
-let choice = prompt("Did you want the word list or the phrase list ? : ");
-while (choice != "word" && choice != "phrase")
-	choice = prompt("Please enter a correct answer (word or phrase) : ");
-
-if (choice == "word")
+function returnPhraseOrWord()
 {
-	for (let index = 0; index < wordList.length; index++)
+	let choice = prompt("Did you want the word list or the phrase list ? : ");
+	
+	while (choice != "word" && choice != "phrase")
+		choice = prompt("Please enter a correct answer (word or phrase) : ");
+	return choice;
+}
+
+function gameLoop(list)
+{
+	for (let index = 0; index < list.length; index++)
 	{
-		let word = prompt("Please enter this word : " + wordList[index]);
-		if (wordList[index] == word)
+		let word = prompt("Please enter this : " + list[index]);
+		if (list[index] == word)
 		{
-			console.log("Congrats ! You find the word : " + wordList[index]);
+			console.log("Congrats ! You find : " + list[index]);
 			score++;
 		}
 		else
 			console.log("You failed ! It's not " + word);
 	}
-	nbQuestions = wordList.length;
-}
-else
-{
-	for (let index = 0; index < phraseList.length; index++)
-	{
-		let phrase = prompt("Please enter this phrase : " + phraseList[index]);
-		if (phraseList[index] == phrase)
-		{
-			console.log("Congrats ! You find the phrase : " + phraseList[index]);
-			score++;
-		}
-		else
-		console.log("You failed ! it's not " + phrase);
-	}
-	nbQuestions = phraseList.length;
+	nbQuestions = list.length;
 }
 
 function returnMessageScore(score, nbQuestions)
@@ -39,4 +29,14 @@ function returnMessageScore(score, nbQuestions)
 	return message;
 }
 
-console.log(returnMessageScore(score, nbQuestions));
+function startGame()
+{
+	let choice = returnPhraseOrWord();
+	if (choice == "word")
+		gameLoop(wordList);
+	else
+		gameLoop(phraseList);
+	console.log(returnMessageScore(score, nbQuestions));
+}
+
+startGame();
