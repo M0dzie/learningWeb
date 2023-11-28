@@ -1,12 +1,6 @@
-const wordList = ["Cachalot", "Petunia", "Serviette"];
-const phraseList = ["Pas de panique !", "La vie, l'univers et le reste", "Merci pour le poisson"];
-let score = 0;
-
 let choice = prompt("Did you want the word list or the phrase list ? : ");
 while (choice != "word" && choice != "phrase")
 	choice = prompt("Please enter a correct answer (word or phrase) : ");
-
-let nbQuestions = 0;
 
 if (choice == "word")
 {
