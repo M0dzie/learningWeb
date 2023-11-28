@@ -38,5 +38,3 @@ function startGame()
 		gameLoop(phraseList);
 	console.log(returnMessageScore(score, nbQuestions));
 }
-
-startGame();
