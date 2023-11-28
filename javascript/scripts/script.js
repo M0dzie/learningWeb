@@ -38,3 +38,6 @@ function startGame()
 		gameLoop(phraseList);
 	console.log(returnMessageScore(score, nbQuestions));
 }
+
+let divZoneProp = document.querySelector("#zoneProposition span")
+console.log(divZoneProp);
